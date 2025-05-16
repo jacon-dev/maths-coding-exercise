@@ -21,5 +21,17 @@ namespace MathsChallenge
 
             Assert.That(result, Is.EqualTo(expectedResult));
         }
+
+        [TestCase(5, 5, 0)]
+        [TestCase(13, 4, 9)]
+        [TestCase(12, 34, -22)]
+        [TestCase(-15, 8, -23)]
+        [TestCase(-24, -16, -8)]
+        public void When_calling_DoTheMath_with_subtraction_and_two_numbers_the_return_value_is_subtracted_correctly(int firstNumber, int secondNumber, int expectedResult)
+        {
+            var result = sut.DoTheMath(MathsAction.Subtraction, firstNumber, secondNumber);
+
+            Assert.That(result, Is.EqualTo(expectedResult));
+        }
     }
 }
