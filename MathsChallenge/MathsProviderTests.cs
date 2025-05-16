@@ -45,5 +45,17 @@ namespace MathsChallenge
 
             Assert.That(result, Is.EqualTo(expectedResult));
         }
+
+        [TestCase(25, 5, 5)]
+        [TestCase(16, 4, 4)]
+        [TestCase(-12, 3, -4)]
+        [TestCase(-60, -20, 3)]
+        [TestCase(30, 2, 15)]
+        public void When_calling_DoTheMath_with_division_and_two_numbers_the_return_value_is_subtracted_correctly(int firstNumber, int secondNumber, int expectedResult)
+        {
+            var result = sut.DoTheMath(MathsAction.Division, firstNumber, secondNumber);
+
+            Assert.That(result, Is.EqualTo(expectedResult));
+        }
     }
 }
