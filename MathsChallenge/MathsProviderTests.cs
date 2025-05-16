@@ -2,12 +2,12 @@ namespace MathsChallenge
 {
     public class Tests
     {
-        private MathsAction sut;
+        private MathsProvider sut;
 
         [SetUp]
         public void Setup()
         {
-            sut = new MathsAction();
+            sut = new MathsProvider();
         }
 
         [TestCase(5, 5, 10)]
