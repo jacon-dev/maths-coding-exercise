@@ -33,5 +33,17 @@ namespace MathsChallenge
 
             Assert.That(result, Is.EqualTo(expectedResult));
         }
+
+        [TestCase(20, 5, 100)]
+        [TestCase(6, 4, 24)]
+        [TestCase(-12, 6, -72)]
+        [TestCase(-10, -8, 80)]
+        [TestCase(2, 30, 60)]
+        public void When_calling_DoTheMath_with_multiplication_and_two_numbers_the_return_value_is_subtracted_correctly(int firstNumber, int secondNumber, int expectedResult)
+        {
+            var result = sut.DoTheMath(MathsAction.Multiplication, firstNumber, secondNumber);
+
+            Assert.That(result, Is.EqualTo(expectedResult));
+        }
     }
 }
