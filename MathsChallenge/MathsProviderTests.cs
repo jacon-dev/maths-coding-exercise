@@ -37,7 +37,7 @@ namespace MathsChallenge
         [TestCase(20, 5, 100)]
         [TestCase(6, 4, 24)]
         [TestCase(-12, 6, -72)]
-        [TestCase(-10, -8, 80)]
+        [TestCase(-10, 8, -80)]
         [TestCase(2, 30, 60)]
         public void When_calling_DoTheMath_with_multiplication_and_two_numbers_the_return_value_is_subtracted_correctly(int firstNumber, int secondNumber, int expectedResult)
         {
@@ -49,7 +49,7 @@ namespace MathsChallenge
         [TestCase(25, 5, 5)]
         [TestCase(16, 4, 4)]
         [TestCase(-12, 3, -4)]
-        [TestCase(-60, -20, 3)]
+        [TestCase(-60, 20, -3)]
         [TestCase(30, 2, 15)]
         public void When_calling_DoTheMath_with_division_and_two_numbers_the_return_value_is_subtracted_correctly(int firstNumber, int secondNumber, int expectedResult)
         {
