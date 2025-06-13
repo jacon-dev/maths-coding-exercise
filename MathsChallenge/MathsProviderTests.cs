@@ -52,7 +52,7 @@ namespace MathsChallenge
         [TestCase(2, 30, 60)]
         [TestCase(3, 536870911, 1610612733)]
         [TestCase(2, 1073741823, 2147483646)]
-        public void When_calling_DoTheMath_with_multiplication_and_two_numbers_the_return_value_is_subtracted_correctly(int firstNumber, int secondNumber, int expectedResult)
+        public void When_calling_DoTheMath_with_multiplication_and_two_numbers_the_return_value_is_multiplied_correctly(int firstNumber, int secondNumber, int expectedResult)
         {
             timer.Start();
             var result = sut.DoTheMath(MathsAction.Multiplication, firstNumber, secondNumber);
@@ -69,7 +69,7 @@ namespace MathsChallenge
         [TestCase(30, 2, 15)]
         [TestCase(1610612733, 3, 536870911)]
         [TestCase(2147483646, 2, 1073741823)]
-        public void When_calling_DoTheMath_with_division_and_two_numbers_the_return_value_is_subtracted_correctly(int firstNumber, int secondNumber, int expectedResult)
+        public void When_calling_DoTheMath_with_division_and_two_numbers_the_return_value_is_divided_correctly(int firstNumber, int secondNumber, int expectedResult)
         {
             timer.Start();
             var result = sut.DoTheMath(MathsAction.Division, firstNumber, secondNumber);
